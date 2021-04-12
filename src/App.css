@@ -1,38 +1,165 @@
+#root {
+  background-color: #333;
+}
+
+.resume {
+  text-align: left;
+}
+
+.resume h2,
+h1 {
+  color: #17a2b8;
+}
+
+.resume p,
+span {
+  color: #f8f9fa;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.project-img {
+  max-width: 95%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resume {
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
+  margin: 00px auto;
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+}
+
+.card {
+  max-width: 18rem;
+  margin: 5px;
+}
+
+#hero {
+  margin: auto;
+  height: 40vw;
+  max-height: 450px;
+  width: 100%;
+  background-image: url("./assets/pexels-valdemaras-d-1647962.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-content {
+  padding: 25px;
+  text-align: left;
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  width: 80%;
+  max-width: 1200px;
+  height: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer {
+  background: #343a40;
+}
+
+footer {
+  margin-top: 0px;
+}
+
+.carousel-item > img {
+  margin: auto;
+}
+
+.carousel {
+  margin: auto;
+  width: 80%;
+  background: #222;
+}
+.carousel-indicators > button {
+  background: grey;
+  margin: 10px;
+  width: 45px;
+  outline: none;
+  border: none;
+  height: 7px;
+}
+
+.carousel-indicators > button.active {
+  background: #007bff;
+}
+
+.container-fluid {
+  max-width: 1400px;
+}
+
+.d-flex {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .col-2 {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
   }
+  #hero {
+    height: 60vw;
+  }
+
+  .Container {
+    max-width: 95%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .col-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .App {
+  }
+
+  #hero {
+    margin: auto;
+    height: 80vw;
+  }
+
+  .Container {
+    max-width: 95%;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container-fluid {
+    display: block;
+  }
+
+  .col-2 {
+    display: none;
+  }
+}
+
+/*-----------------------------------------*/
+
+.carousel-control-next,
+.carousel-control-prev {
+  background: none;
+  outline: none;
+  border: none;
 }
